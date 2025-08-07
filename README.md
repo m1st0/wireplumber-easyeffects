@@ -18,13 +18,14 @@ EasyEffects recommends not being set as the default audio sink. However, this ca
 1. Copy `99-route-to-easyeffects.lua` to the WirePlumber configuration directory:
 
     ```bash
+    sudo mkdir -p /etc/wireplumber/main.lua.d/
     sudo cp 99-route-to-easyeffects.lua /etc/wireplumber/main.lua.d/
     ```
 
 2. Restart WirePlumber since it runs at the user level through systemd:
 
     ```
-    /etc/wireplumber/main.lua.d
+    systemctl --user restart wireplumber
     ```
 
 3. Make sure EasyEffects is running and has created its virtual sink such as with KDE's volume controls.
