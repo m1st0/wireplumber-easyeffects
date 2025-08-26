@@ -1,15 +1,17 @@
 # EasyEffects Audio Routing (PipeWire / WirePlumber)
 
-This project is licensed under Apache License 2.0. See the [LICENSE.txt](LICENSE.txt) file for details.
-If you find this project useful and would like to support its development, consider donating via PayPal or Venmo:
-[PayPal](https://www.paypal.com/paypalme/m1st0).
-[Venmo](https://venmo.com/code?user_id=3319592654995456106&created=1753280522)
+This script configures WirePlumber to route all audio output streams (`media.class = "Stream/Output/Audio"`) through the EasyEffects sink. This allows global audio processing without setting EasyEffects as the system default sink.
+
+If you find this project useful and would like to support its development, consider donating via PayPal or Venmo: 
+- [PayPal](https://www.paypal.com/paypalme/m1st0)
+- [Venmo](https://venmo.com/code?user_id=3319592654995456106&created=1753280522)
 
 © 2025 Maulik Mistry
 
-This script configures WirePlumber to route all audio output streams (`media.class = "Stream/Output/Audio"`) through the EasyEffects sink. This allows global audio processing without setting EasyEffects as the system default sink.
+This project is licensed under the Apache License 2.0.
+See the [LICENSE.txt](LICENSE.txt) file for full license text.
 
-## Why
+## Desired Default Routing
 
 EasyEffects recommends not being set as the default audio sink. However, this can make routing audio from every app manually tedious. This script ensures all output audio automatically flows through EasyEffects.
 
